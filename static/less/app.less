@@ -11,6 +11,7 @@
 @import "theme.less";
 
 @black: #1a1a1a;
+@white: white;
 
 @player-colour: #636466;
 @player-slider: #e6e6e6;
@@ -24,6 +25,15 @@
     -moz-transition: -moz-transform @transformArguments, @anotherProperty;
     -ms-transition: -ms-transform @transformArguments, @anotherProperty;
     -o-transition: -o-transform @transformArguments, @anotherProperty;
+}
+
+body {
+    background: url(https://d8izdk6bl4gbi.cloudfront.net/https://d1015h9unskp4y.cloudfront.net/attachments/d64d7e0f-5a01-4907-ae26-826cb9b23b00/Swan_1920x1080.jpg) no-repeat center center fixed; 
+    background-position: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 // Honey pot to fool bots (probably best not to use the word "honey"
@@ -40,17 +50,7 @@
     .container();
     text-align: center;
     padding: 30px;
-    color: @black;
-}
-
-.terms {
-    position: fixed;
-    left: 10px;
-    bottom: 10px;
-
-    a {
-        margin-right: 30px;
-    }
+    color: @white;
 }
 .contactus {
     position: fixed;
